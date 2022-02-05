@@ -153,7 +153,7 @@
           <li><a href="gallery.php">Gallery</a></li>
           <li><a href="contact.php">Contact</a></li>
           <li><a href="signin.php"> Login</a></li>
-          <li><a href="signup.php">Register</a></li>
+          <li><a href="Signup.php">Register</a></li>
         </ul> 
       </div>
 
