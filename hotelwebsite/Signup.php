@@ -5,7 +5,9 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   </head> -->
 
-
+<?php
+session_start();
+?>
 <?php include 'header.php';?>
 
 
