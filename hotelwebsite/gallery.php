@@ -19,23 +19,8 @@ session_start();
               <div class="col-sm-4 wowload fadeInUp"><a href="images/photos/11.jpg" title="Living Room" class="gallery-image" data-gallery><img src="images/photos/11.jpg" class="img-responsive"></a></div>
               <div class="col-sm-4 wowload fadeInUp"><a href="images/photos/1.jpg" title="Fruits" class="gallery-image" data-gallery><img src="images/photos/1.jpg" class="img-responsive"></a></div>
               <div class="col-sm-4 wowload fadeInUp"><a href="images/photos/3.jpg" title="Travel" class="gallery-image" data-gallery><img src="images/photos/3.jpg" class="img-responsive"></a></div>
-              <?php
-
-              $mysqli = new mysqli('localhost','root','','images') or die($mysqli->connect_error);
-              $table = 'cats';
-    
-              $result = $mysqli->query("SELECT * FROM $table") or die($mysqli->error);
-
-              while ($data = $result->fetch_assoc()){
-                     // echo"<h2>{$data['name']}</h2>";
-                     echo "<div class='col-sm-4 wowload fadeInUp'>";
-                     echo "<a href='{$data['img_dir']}' title='Travel' class='gallery-image' data-gallery>";
-                     echo "<img src='{$data['img_dir']}' class='img-responsive'></a>";
-                     echo "</div>";
-
-                     // echo "<img src='{$data['img_dir']}'>";
-                     }
-              ?>
+              
+              
        </div>
        <div class="spacer">
               <form class="input-group" action="upload.php" method="POST" enctype="multipart/form-data">
